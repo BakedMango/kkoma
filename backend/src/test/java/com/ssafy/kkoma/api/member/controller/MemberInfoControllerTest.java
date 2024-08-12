@@ -1,12 +1,9 @@
 package com.ssafy.kkoma.api.member.controller;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.ssafy.kkoma.api.area.service.AreaService;
 import com.ssafy.kkoma.api.member.dto.request.UpdateMemberRequest;
 import com.ssafy.kkoma.api.member.dto.response.*;
 import com.ssafy.kkoma.api.product.dto.OfferedProductInfoResponse;
-import com.ssafy.kkoma.api.product.dto.ProductInfoResponse;
 import com.ssafy.kkoma.api.product.dto.ProductSummary;
 import com.ssafy.kkoma.domain.area.entity.Area;
 import com.ssafy.kkoma.domain.area.repository.AreaRepository;
@@ -25,14 +22,11 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.web.servlet.MockMvc;
-
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.List;
-
 import java.util.List;
 
 @Slf4j

@@ -1,21 +1,18 @@
 package com.ssafy.kkoma.global.util.complete;
 
+import com.ssafy.kkoma.global.error.ErrorCode;
+import com.ssafy.kkoma.global.error.exception.BusinessException;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.collections4.Trie;
+import org.apache.commons.collections4.trie.PatriciaTrie;
+import org.springframework.core.io.ClassPathResource;
+
 import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.SortedMap;
-
-import org.apache.commons.collections4.Trie;
-import org.apache.commons.collections4.trie.PatriciaTrie;
-import org.springframework.core.io.ClassPathResource;
-
-import com.ssafy.kkoma.global.error.ErrorCode;
-import com.ssafy.kkoma.global.error.exception.BusinessException;
-
-import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class AutoCompleteUtils {

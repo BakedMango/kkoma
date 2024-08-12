@@ -1,13 +1,11 @@
 package com.ssafy.kkoma.api.image.service;
 
-import java.util.List;
-
+import com.ssafy.kkoma.global.util.S3Util;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.ssafy.kkoma.global.util.S3Util;
-
-import lombok.RequiredArgsConstructor;
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor

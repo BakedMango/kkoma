@@ -1,8 +1,5 @@
 package com.ssafy.kkoma.api.chat.service;
 
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
 import com.ssafy.kkoma.api.chat.dto.request.ChatMessageRequest;
 import com.ssafy.kkoma.api.chat.dto.response.ChatMessageResponse;
 import com.ssafy.kkoma.api.member.service.MemberService;
@@ -11,8 +8,9 @@ import com.ssafy.kkoma.domain.chat.entity.ChatRoom;
 import com.ssafy.kkoma.domain.chat.repository.ChatMessageRepository;
 import com.ssafy.kkoma.domain.member.constant.Role;
 import com.ssafy.kkoma.domain.member.entity.Member;
-
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @RequiredArgsConstructor

@@ -1,11 +1,10 @@
 package com.ssafy.kkoma.domain.area.repository;
 
-import java.util.Optional;
-
+import com.ssafy.kkoma.domain.area.entity.Area;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.ssafy.kkoma.domain.area.entity.Area;
+import java.util.Optional;
 
 @Repository
 public interface AreaRepository extends JpaRepository<Area, Long>, AreaRepositoryCustom {

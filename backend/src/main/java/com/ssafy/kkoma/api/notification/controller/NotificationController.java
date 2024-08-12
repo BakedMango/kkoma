@@ -1,23 +1,21 @@
 package com.ssafy.kkoma.api.notification.controller;
 
-import java.util.List;
-
 import com.ssafy.kkoma.api.common.dto.BasePageResponse;
-import com.ssafy.kkoma.domain.notification.entity.Notification;
-import org.springframework.data.domain.Pageable;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
 import com.ssafy.kkoma.api.notification.dto.response.NotificationSummary;
 import com.ssafy.kkoma.api.notification.service.NotificationService;
+import com.ssafy.kkoma.domain.notification.entity.Notification;
 import com.ssafy.kkoma.global.resolver.memberinfo.MemberInfo;
 import com.ssafy.kkoma.global.resolver.memberinfo.MemberInfoDto;
 import com.ssafy.kkoma.global.util.ApiUtils;
-
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Pageable;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Tag(name = "Notification")
 @RestController

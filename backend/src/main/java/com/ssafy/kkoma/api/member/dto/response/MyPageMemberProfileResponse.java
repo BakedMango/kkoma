@@ -1,7 +1,6 @@
 package com.ssafy.kkoma.api.member.dto.response;
 
 import com.ssafy.kkoma.api.product.dto.ProductSummary;
-
 import lombok.Builder;
 import lombok.Getter;
 

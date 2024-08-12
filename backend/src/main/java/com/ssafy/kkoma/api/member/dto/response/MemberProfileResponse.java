@@ -1,7 +1,6 @@
 package com.ssafy.kkoma.api.member.dto.response;
 
 import com.ssafy.kkoma.domain.member.entity.Member;
-
 import lombok.Builder;
 import lombok.Getter;
 

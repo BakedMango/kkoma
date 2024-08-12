@@ -1,7 +1,6 @@
 package com.ssafy.kkoma.domain.point.constant;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.ssafy.kkoma.domain.point.entity.Point;
 
 public enum PointChangeType {
 

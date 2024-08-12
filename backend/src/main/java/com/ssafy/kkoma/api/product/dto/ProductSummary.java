@@ -1,11 +1,12 @@
 package com.ssafy.kkoma.api.product.dto;
 
 import com.ssafy.kkoma.domain.area.entity.Area;
-import com.ssafy.kkoma.domain.area.repository.AreaRepository;
 import com.ssafy.kkoma.domain.product.constant.ProductType;
-
 import com.ssafy.kkoma.domain.product.entity.Product;
-import lombok.*;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.SuperBuilder;
 
 import java.time.Duration;

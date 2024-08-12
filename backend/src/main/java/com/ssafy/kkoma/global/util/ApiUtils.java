@@ -1,10 +1,8 @@
 package com.ssafy.kkoma.global.util;
 
 import com.ssafy.kkoma.global.error.ErrorResponse;
-import com.ssafy.kkoma.global.error.exception.BusinessException;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import org.springframework.http.HttpStatus;
 
 public class ApiUtils {
 

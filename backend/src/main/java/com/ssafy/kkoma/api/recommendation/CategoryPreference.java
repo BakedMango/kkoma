@@ -2,9 +2,11 @@ package com.ssafy.kkoma.api.recommendation;
 
 import com.ssafy.kkoma.domain.member.entity.Member;
 import com.ssafy.kkoma.domain.product.entity.Category;
-import com.ssafy.kkoma.domain.product.entity.Product;
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
 
 import java.io.Serializable;
 

@@ -1,7 +1,5 @@
 package com.ssafy.kkoma.api.product.service;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import com.ssafy.kkoma.api.common.dto.BasePageResponse;
 import com.ssafy.kkoma.api.product.dto.ProductSummary;
 import com.ssafy.kkoma.domain.member.entity.Member;
@@ -10,14 +8,15 @@ import com.ssafy.kkoma.domain.product.entity.ViewHistory;
 import com.ssafy.kkoma.domain.product.repository.ViewHistoryRepository;
 import com.ssafy.kkoma.factory.MemberFactory;
 import com.ssafy.kkoma.factory.ProductFactory;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import org.junit.jupiter.api.Test;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
 class ViewHistoryServiceTest {

@@ -1,11 +1,10 @@
 package com.ssafy.kkoma.factory;
 
 import com.ssafy.kkoma.domain.area.entity.Area;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
 import com.ssafy.kkoma.domain.location.entity.Location;
 import com.ssafy.kkoma.domain.location.repository.LocationRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 @Component
 public class LocationFactory {
