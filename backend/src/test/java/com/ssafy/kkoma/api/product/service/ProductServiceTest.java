@@ -95,6 +95,7 @@ class ProductServiceTest {
 	private static final String IMAGE_URL = "IMAGE_URL";
 	private static final String NAME = "NAME";
 
+	@Disabled("법정동 데이터에 종속적")
 	@Test
 	@Transactional
 	public void 글_목록_전체_조회하기() throws Exception {
@@ -116,6 +117,7 @@ class ProductServiceTest {
 		assertEquals(sizeBefore + 10, productSummaries.size());
 	}
 
+	@Disabled("법정동 데이터에 종속적")
 	@Test
 	@Transactional
 	public void 글_키워드_검색() throws Exception {
@@ -141,6 +143,7 @@ class ProductServiceTest {
 		assertEquals(2, searchProductResponse.getContent().size());
 	}
 
+	@Disabled("법정동 데이터에 종속적")
 	@Test
 	@Transactional
 	public void 글_상세_조회하기_성공() throws Exception {
@@ -190,6 +193,7 @@ class ProductServiceTest {
 		assertEquals(100, updatedProduct.getViewCount());
 	}
 
+	@Disabled("법정동 데이터에 종속적")
     @Test
 	@Transactional
     void 거래_글_생성() {
@@ -246,6 +250,7 @@ class ProductServiceTest {
 
 	}
 
+	@Disabled("법정동 데이터에 종속적")
 	@Test
 	@Transactional
 	public void 나의_모든_찜_목록을_조회한다() throws Exception{
@@ -317,6 +322,7 @@ class ProductServiceTest {
 		assertEquals(beforeWish, unwishResponse.getWishCount());
 	}
 
+	@Disabled("법정동 데이터에 종속적")
 	@Test
 	@Transactional
 	void 지난_한_시간_동안_찜수_탑4_상품글_조회() {
@@ -377,6 +383,7 @@ class ProductServiceTest {
 
 	}
 
+	@Disabled("법정동 데이터에 종속적")
 	@Test
 	@Transactional
 	void 지난_한_시간_동안_조회수_탑4_상품글_조회() {

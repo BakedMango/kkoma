@@ -90,6 +90,7 @@ class MemberServiceTest {
         assertEquals(foundMember.getPoint().getId(), point.getId());
     }
 
+    @Disabled("법정동 데이터에 종속적")
     @Test
     @Transactional
     void 나의_판매글_조회() {
