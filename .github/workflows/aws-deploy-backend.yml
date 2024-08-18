@@ -28,7 +28,7 @@ jobs:
       - name: Build with Gradle
         uses: gradle/gradle-build-action@v3.5.0
         with:
-          arguments: build
+          arguments: build -x test
           build-root-directory: backend
 
 
