@@ -3,7 +3,7 @@ name: Deploy Backend to AWS EC2
 on:
   push:
     branches:
-      - "develop"
+      - "feat/github-action"
 
 env:
   PROJECT_NAME: kkoma
