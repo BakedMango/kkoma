@@ -1,0 +1,1 @@
+java -jar -Dspring.profiles.active=production kkoma-0.0.1-SNAPSHOT.jar
