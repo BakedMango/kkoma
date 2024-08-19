@@ -1,10 +1,9 @@
 package com.ssafy.kkoma.factory;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
 import com.ssafy.kkoma.domain.area.entity.Area;
 import com.ssafy.kkoma.domain.area.repository.AreaRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 @Component
 public class AreaFactory {

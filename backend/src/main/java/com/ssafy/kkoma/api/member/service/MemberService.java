@@ -1,20 +1,20 @@
 package com.ssafy.kkoma.api.member.service;
 
 import com.ssafy.kkoma.api.area.service.AreaService;
-import com.ssafy.kkoma.api.member.dto.response.MemberInfoResponse;
 import com.ssafy.kkoma.api.member.dto.request.UpdateMemberRequest;
+import com.ssafy.kkoma.api.member.dto.response.MemberInfoResponse;
 import com.ssafy.kkoma.api.product.dto.ProductInfoResponse;
 import com.ssafy.kkoma.domain.area.entity.Area;
 import com.ssafy.kkoma.domain.deal.entity.Deal;
 import com.ssafy.kkoma.domain.deal.repository.DealRepository;
-import com.ssafy.kkoma.domain.member.constant.Role;
-import com.ssafy.kkoma.domain.point.repository.PointRepository;
 import com.ssafy.kkoma.domain.kid.entity.Kid;
 import com.ssafy.kkoma.domain.kid.repository.KidRepository;
+import com.ssafy.kkoma.domain.member.constant.Role;
 import com.ssafy.kkoma.domain.member.entity.Member;
 import com.ssafy.kkoma.domain.member.repository.MemberRepository;
 import com.ssafy.kkoma.domain.offer.entity.Offer;
 import com.ssafy.kkoma.domain.point.entity.Point;
+import com.ssafy.kkoma.domain.point.repository.PointRepository;
 import com.ssafy.kkoma.domain.product.constant.MyProductType;
 import com.ssafy.kkoma.domain.product.constant.ProductType;
 import com.ssafy.kkoma.domain.product.entity.Product;

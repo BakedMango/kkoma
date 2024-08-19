@@ -1,8 +1,5 @@
 package com.ssafy.kkoma.api.product.service;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
 import com.ssafy.kkoma.api.product.dto.response.CategoryResponse;
 import com.ssafy.kkoma.domain.product.entity.Category;
 import com.ssafy.kkoma.domain.product.repository.CategoryRepository;
@@ -11,6 +8,9 @@ import com.ssafy.kkoma.global.error.exception.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @Transactional

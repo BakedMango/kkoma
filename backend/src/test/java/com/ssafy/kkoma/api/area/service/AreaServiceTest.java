@@ -1,15 +1,15 @@
 package com.ssafy.kkoma.api.area.service;
 
-import static org.junit.jupiter.api.Assertions.*;
-
+import com.ssafy.kkoma.domain.area.entity.Area;
+import com.ssafy.kkoma.factory.AreaFactory;
+import com.ssafy.kkoma.global.error.exception.EntityNotFoundException;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.ssafy.kkoma.domain.area.entity.Area;
-import com.ssafy.kkoma.factory.AreaFactory;
-import com.ssafy.kkoma.global.error.exception.EntityNotFoundException;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @SpringBootTest
 class AreaServiceTest {

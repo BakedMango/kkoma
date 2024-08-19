@@ -15,6 +15,7 @@ import com.ssafy.kkoma.global.error.exception.BusinessException;
 import com.ssafy.kkoma.global.util.CustomMockMvcSpringBootTest;
 import com.ssafy.kkoma.global.util.RequestUtil;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.web.servlet.MockMvc;
@@ -180,7 +181,7 @@ class WishControllerTest {
                 );
     }
 
-
+    @Disabled("법정동 데이터에 종속적")
     @Test
     @Transactional
     public void 나의_찜_목록_조회하기() throws Exception{

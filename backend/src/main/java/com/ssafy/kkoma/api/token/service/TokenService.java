@@ -1,8 +1,8 @@
 package com.ssafy.kkoma.api.token.service;
 
+import com.ssafy.kkoma.api.member.service.MemberService;
 import com.ssafy.kkoma.api.token.dto.AccessTokenResponse;
 import com.ssafy.kkoma.domain.member.entity.Member;
-import com.ssafy.kkoma.api.member.service.MemberService;
 import com.ssafy.kkoma.global.jwt.constant.GrantType;
 import com.ssafy.kkoma.global.jwt.service.TokenManager;
 import lombok.RequiredArgsConstructor;

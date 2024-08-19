@@ -1,6 +1,5 @@
 package com.ssafy.kkoma.domain.member.repository;
 
-import com.ssafy.kkoma.domain.member.constant.MemberType;
 import com.ssafy.kkoma.domain.member.constant.Role;
 import com.ssafy.kkoma.domain.member.entity.Member;
 import org.springframework.data.jpa.repository.JpaRepository;

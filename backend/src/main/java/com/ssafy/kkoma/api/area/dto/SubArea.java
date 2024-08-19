@@ -1,7 +1,6 @@
 package com.ssafy.kkoma.api.area.dto;
 
 import com.ssafy.kkoma.domain.area.entity.Area;
-
 import lombok.Builder;
 import lombok.Getter;
 

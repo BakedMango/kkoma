@@ -1,14 +1,14 @@
 package com.ssafy.kkoma.domain.area.repository;
 
-import java.util.List;
-
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import com.ssafy.kkoma.domain.area.entity.Area;
-import static com.ssafy.kkoma.domain.area.entity.QArea.area;
-
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+
+import java.util.List;
+
+import static com.ssafy.kkoma.domain.area.entity.QArea.area;
 
 @Slf4j
 @RequiredArgsConstructor
