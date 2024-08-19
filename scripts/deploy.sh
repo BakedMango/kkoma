@@ -19,4 +19,4 @@ else
 fi
 
 echo "> Deploy - $JAR_PATH "
-nohup java -jar -Dspring.profiles.active=production $JAR_PATH > /dev/null 2> /dev/null < /dev/null &
+nohup java -jar -Dspring.profiles.active=production $JAR_PATH --spring.config.additional-location=file:application-env.properties > /dev/null 2> /dev/null < /dev/null &
