@@ -28,7 +28,7 @@ jobs:
 
       - name: Set YML
         run: |
-          mkdir -p src/main/resources
+          mkdir -p backend/src/main/resources
           echo "${{ secrets.APPLICATION_TEST }}" | base64 --decode > backend/src/main/resources/application-test.yml
 
       - name: Build with Gradle
