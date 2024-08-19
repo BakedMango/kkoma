@@ -1,8 +1,8 @@
 package com.ssafy.kkoma.domain.area.repository;
 
-import java.util.List;
-
 import com.ssafy.kkoma.domain.area.entity.Area;
+
+import java.util.List;
 
 public interface AreaRepositoryCustom {
 

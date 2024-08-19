@@ -2,7 +2,6 @@ package com.ssafy.kkoma.api.product.dto.response;
 
 import com.ssafy.kkoma.domain.product.constant.ProductType;
 import com.ssafy.kkoma.domain.product.entity.Product;
-
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;

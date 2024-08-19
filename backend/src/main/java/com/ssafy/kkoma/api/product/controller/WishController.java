@@ -2,9 +2,8 @@ package com.ssafy.kkoma.api.product.controller;
 
 import com.ssafy.kkoma.api.common.dto.BasePageResponse;
 import com.ssafy.kkoma.api.product.dto.ProductSummary;
-
-import com.ssafy.kkoma.api.product.service.ProductService;
 import com.ssafy.kkoma.api.product.dto.ProductWishResponse;
+import com.ssafy.kkoma.api.product.service.ProductService;
 import com.ssafy.kkoma.domain.product.entity.WishList;
 import com.ssafy.kkoma.global.resolver.memberinfo.MemberInfo;
 import com.ssafy.kkoma.global.resolver.memberinfo.MemberInfoDto;
@@ -13,7 +12,6 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
-
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

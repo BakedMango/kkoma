@@ -4,7 +4,6 @@ import com.ssafy.kkoma.api.common.dto.BasePageResponse;
 import com.ssafy.kkoma.api.member.service.MemberService;
 import com.ssafy.kkoma.api.notification.dto.response.NotiDetail;
 import com.ssafy.kkoma.api.notification.dto.response.NotificationSummary;
-import com.ssafy.kkoma.domain.deal.entity.Deal;
 import com.ssafy.kkoma.domain.member.entity.Member;
 import com.ssafy.kkoma.domain.notification.entity.Notification;
 import com.ssafy.kkoma.domain.notification.repository.NotificationRepository;

@@ -1,26 +1,8 @@
 package com.ssafy.kkoma.job.dealReminder;
 
-import com.ssafy.kkoma.api.deal.dto.request.DecideOfferRequest;
-import com.ssafy.kkoma.api.offer.service.OfferService;
-import com.ssafy.kkoma.domain.deal.repository.DealRepository;
-import com.ssafy.kkoma.domain.member.entity.Member;
-import com.ssafy.kkoma.domain.notification.repository.NotificationRepository;
-import com.ssafy.kkoma.domain.offer.entity.Offer;
-import com.ssafy.kkoma.domain.product.entity.Category;
-import com.ssafy.kkoma.domain.product.entity.Product;
-import com.ssafy.kkoma.factory.*;
 import lombok.extern.slf4j.Slf4j;
-import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.Test;
-import org.springframework.batch.core.ExitStatus;
-import org.springframework.batch.core.JobExecution;
-import org.springframework.batch.test.JobLauncherTestUtils;
 import org.springframework.batch.test.context.SpringBatchTest;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.time.LocalDateTime;
 
 //@ActiveProfiles("test")
 @Slf4j

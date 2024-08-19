@@ -3,8 +3,6 @@ package com.ssafy.kkoma.domain.member.entity;
 import com.ssafy.kkoma.api.member.dto.request.UpdateMemberRequest;
 import com.ssafy.kkoma.domain.common.entity.BaseTimeEntity;
 import com.ssafy.kkoma.domain.kid.entity.Kid;
-import com.ssafy.kkoma.domain.location.entity.Location;
-
 import com.ssafy.kkoma.domain.member.constant.MemberType;
 import com.ssafy.kkoma.domain.member.constant.Role;
 import com.ssafy.kkoma.domain.offer.entity.Offer;

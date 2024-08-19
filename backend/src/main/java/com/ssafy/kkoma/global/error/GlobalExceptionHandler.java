@@ -1,7 +1,6 @@
 package com.ssafy.kkoma.global.error;
 
 import com.ssafy.kkoma.global.error.exception.BusinessException;
-import com.ssafy.kkoma.global.util.ApiUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +10,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
-import static com.ssafy.kkoma.global.util.ApiUtils.*;
+import static com.ssafy.kkoma.global.util.ApiUtils.ApiResult;
+import static com.ssafy.kkoma.global.util.ApiUtils.error;
 
 @Slf4j
 @RestControllerAdvice

@@ -1,7 +1,6 @@
 package com.ssafy.kkoma.global.config;
 
 import com.ssafy.kkoma.global.error.FeignClientExceptionErrorDecoder;
-
 import feign.Logger;
 import feign.Retryer;
 import feign.codec.ErrorDecoder;
