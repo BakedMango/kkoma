@@ -1,19 +1,17 @@
 package com.ssafy.kkoma.api.area.service;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
-import org.springframework.stereotype.Service;
-
 import com.ssafy.kkoma.api.area.dto.SubArea;
 import com.ssafy.kkoma.domain.area.entity.Area;
 import com.ssafy.kkoma.domain.area.repository.AreaRepository;
 import com.ssafy.kkoma.global.error.ErrorCode;
 import com.ssafy.kkoma.global.error.exception.BusinessException;
-import com.ssafy.kkoma.global.util.AreaCodeUtils;
 import com.ssafy.kkoma.global.error.exception.EntityNotFoundException;
-
+import com.ssafy.kkoma.global.util.AreaCodeUtils;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor

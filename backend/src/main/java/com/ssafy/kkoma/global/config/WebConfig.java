@@ -1,16 +1,14 @@
 package com.ssafy.kkoma.global.config;
 
-import com.ssafy.kkoma.domain.member.entity.Member;
 import com.ssafy.kkoma.global.interceptor.AdminAuthorizationInterceptor;
 import com.ssafy.kkoma.global.interceptor.AuthenticationInterceptor;
 import com.ssafy.kkoma.global.resolver.memberinfo.MemberInfoArgumentResolver;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
-import org.springframework.web.servlet.config.annotation.*;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.util.List;

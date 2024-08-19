@@ -1,12 +1,11 @@
 package com.ssafy.kkoma.api.chat.dto.response;
 
-import java.time.format.DateTimeFormatter;
-
 import com.ssafy.kkoma.api.member.dto.response.MemberProfileResponse;
 import com.ssafy.kkoma.domain.chat.entity.ChatMessage;
-
 import lombok.Builder;
 import lombok.Getter;
+
+import java.time.format.DateTimeFormatter;
 
 @Getter
 @Builder

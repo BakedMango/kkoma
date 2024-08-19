@@ -1,9 +1,8 @@
 package com.ssafy.kkoma.api.kid.controller;
 
-import com.ssafy.kkoma.api.kid.dto.response.KidSummaryResponse;
 import com.ssafy.kkoma.api.kid.dto.request.UpdateKidRequest;
+import com.ssafy.kkoma.api.kid.dto.response.KidSummaryResponse;
 import com.ssafy.kkoma.api.kid.service.KidService;
-import com.ssafy.kkoma.api.login.dto.OauthLoginDto;
 import com.ssafy.kkoma.global.resolver.memberinfo.MemberInfo;
 import com.ssafy.kkoma.global.resolver.memberinfo.MemberInfoDto;
 import com.ssafy.kkoma.global.util.ApiUtils;

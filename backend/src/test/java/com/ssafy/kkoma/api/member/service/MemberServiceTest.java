@@ -15,17 +15,15 @@ import com.ssafy.kkoma.domain.product.repository.ProductRepository;
 import com.ssafy.kkoma.factory.AreaFactory;
 import com.ssafy.kkoma.factory.ChatRoomFactory;
 import com.ssafy.kkoma.factory.LocationFactory;
-
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
 class MemberServiceTest {
@@ -90,6 +88,7 @@ class MemberServiceTest {
         assertEquals(foundMember.getPoint().getId(), point.getId());
     }
 
+    @Disabled("지역 정보 데이터에 종속적인 테스트")
     @Test
     @Transactional
     void 나의_판매글_조회() {

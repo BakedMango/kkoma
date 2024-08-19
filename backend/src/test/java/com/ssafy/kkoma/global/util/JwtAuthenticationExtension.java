@@ -1,16 +1,11 @@
 package com.ssafy.kkoma.global.util;
 
-import com.ssafy.kkoma.domain.member.constant.MemberType;
 import com.ssafy.kkoma.domain.member.constant.Role;
-import com.ssafy.kkoma.domain.member.entity.Member;
-import com.ssafy.kkoma.domain.member.repository.MemberRepository;
 import com.ssafy.kkoma.global.jwt.constant.TokenType;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.BeforeEachCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
 import java.nio.charset.StandardCharsets;

@@ -1,10 +1,10 @@
 package com.ssafy.kkoma.api.login.service;
 
 import com.ssafy.kkoma.api.login.dto.OauthLoginDto;
+import com.ssafy.kkoma.api.member.service.MemberService;
 import com.ssafy.kkoma.domain.member.constant.MemberType;
 import com.ssafy.kkoma.domain.member.constant.Role;
 import com.ssafy.kkoma.domain.member.entity.Member;
-import com.ssafy.kkoma.api.member.service.MemberService;
 import com.ssafy.kkoma.external.oauth.model.OAuthAttributes;
 import com.ssafy.kkoma.external.oauth.service.SocialLoginApiService;
 import com.ssafy.kkoma.external.oauth.service.SocialLoginApiServiceFactory;

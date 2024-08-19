@@ -1,11 +1,10 @@
 package com.ssafy.kkoma.api.product.dto.response;
 
-import java.util.List;
-
 import com.ssafy.kkoma.api.product.dto.ProductSummary;
-
 import lombok.Builder;
 import lombok.Getter;
+
+import java.util.List;
 
 @Getter
 @Builder

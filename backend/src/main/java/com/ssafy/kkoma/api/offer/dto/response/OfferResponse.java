@@ -1,15 +1,12 @@
 package com.ssafy.kkoma.api.offer.dto.response;
 
-import java.util.List;
-
 import com.ssafy.kkoma.api.member.dto.response.MemberProfileResponse;
-import com.ssafy.kkoma.api.member.dto.response.MemberSummaryResponse;
-import com.ssafy.kkoma.domain.member.entity.Member;
 import com.ssafy.kkoma.domain.offer.constant.OfferType;
 import com.ssafy.kkoma.domain.offer.entity.Offer;
-
 import lombok.Builder;
 import lombok.Getter;
+
+import java.util.List;
 
 @Getter
 @Builder
