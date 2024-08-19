@@ -3,10 +3,7 @@ package com.ssafy.kkoma.api.redis.service;
 import com.ssafy.kkoma.factory.MemberFactory;
 import com.ssafy.kkoma.factory.ProductFactory;
 import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -42,6 +39,7 @@ public class RedisServiceTest {
         redisService.deleteValues(KEY);
     }
 
+    @Disabled("Redis에 종속적")
     @Test
     @DisplayName("Redis에 데이터를 저장하면 정상적으로 조회된다.")
     void saveAndFindTest() throws Exception {
@@ -52,6 +50,7 @@ public class RedisServiceTest {
         assertThat(VALUE).isEqualTo(findValue);
     }
 
+    @Disabled("Redis에 종속적")
     @Test
     @DisplayName("Redis에 저장된 데이터를 수정할 수 있다.")
     void updateTest() throws Exception {
@@ -67,6 +66,7 @@ public class RedisServiceTest {
         assertThat(VALUE).isNotEqualTo(findValue);
     }
 
+    @Disabled("Redis에 종속적")
     @Test
     @DisplayName("Redis에 저장된 데이터를 삭제할 수 있다.")
     void deleteTest() throws Exception {
@@ -78,6 +78,7 @@ public class RedisServiceTest {
         assertThat(findValue).isEqualTo("false");
     }
 
+    @Disabled("Redis에 종속적")
     @Test
     @DisplayName("Redis에 저장된 데이터는 만료시간이 지나면 삭제된다.")
     void expiredTest() throws Exception {
