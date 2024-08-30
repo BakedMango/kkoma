@@ -11,7 +11,7 @@ import { NoKids } from "@/components/home/noKids";
 import { KidSummary } from "@/types/kid";
 import { isLogin } from "@/utils/getAccessToken";
 import { useRouter } from "next/navigation";
-import { getWishProductAPI, getViewProductAPI, /*getRecommendAPI*/ } from "@/services/product";
+import { getWishProductAPI, getViewProductAPI, getRecommendAPI } from "@/services/product";
 import { ProductSm } from "@/types/product";
 import HourlyProductList from "@/components/home/hourlyProductList";
 import { NoContents } from "@/components/common/no-contents";
@@ -21,7 +21,7 @@ import { SmallBtn } from "@/components/common/buttons";
 export default function Home() {
   const [kidList, setKidList] = useState<Array<KidSummary>>([]);
   const [selectedName, setSelectedName] = useState<string | null>(null);
-  // const [recommend, setRecommend] = useState<Array<ProductSm>>([]);
+  const [recommend, setRecommend] = useState<Array<ProductSm>>([]);
   const [bestWishProducts, setBestWishProducts] = useState<Array<ProductSm>>([]);
   const [bestViewProducts, setBestViewProducts] = useState<Array<ProductSm>>([]);
   const [canAccess, setCanAccess] = useState<boolean>(false);
@@ -32,10 +32,10 @@ export default function Home() {
     setKidList(res.data);
   };
 
-  /*const getRecommendProducts = async () => {
+  const getRecommendProducts = async () => {
     const res = await getRecommendAPI();
     setRecommend(res);
-  };*/
+  };
 
   const getWishProducts = async () => {
     const res = await getWishProductAPI();
@@ -72,7 +72,7 @@ export default function Home() {
   useEffect(() => {
     if (kidList && kidList.length > 0) {
       setSelectedName(kidList[0].name);
-      // getRecommendProducts();
+      getRecommendProducts();
     }
   }, [kidList]);
 
