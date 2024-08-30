@@ -46,7 +46,7 @@ export const getCategoryAPI = async () => {
   }
 };
 
-/*export const getRecommendAPI = async () => {
+export const getRecommendAPI = async () => {
   try {
     const res = await APIModule({
       action: `/products/recommend?num=4`,
@@ -58,7 +58,7 @@ export const getCategoryAPI = async () => {
       new Error(res.error.errorMessage);
     }
   } catch (e: any) {}
-};*/
+};
 
 export const getWishProductAPI = async () => {
   try {
