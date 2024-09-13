@@ -11,7 +11,7 @@ import { NoKids } from "@/components/home/noKids";
 import { KidSummary } from "@/types/kid";
 import { isLogin } from "@/utils/getAccessToken";
 import { useRouter } from "next/navigation";
-import { getWishProductAPI, getViewProductAPI, /*getRecommendAPI*/ } from "@/services/product";
+import { getWishProductAPI, getViewProductAPI /*getRecommendAPI*/ } from "@/services/product";
 import { ProductSm } from "@/types/product";
 import HourlyProductList from "@/components/home/hourlyProductList";
 import { NoContents } from "@/components/common/no-contents";
@@ -84,11 +84,11 @@ export default function Home() {
         {kidList && kidList.length > 0 ? (
           <>
             <KidCardList kidList={kidList} setSelectedName={setSelectedName} />
-            {recommend && recommend.length > 0 ? (
+            {/* {recommend && recommend.length > 0 ? (
               <RecommandProductList name={selectedName} products={recommend} />
             ) : (
               <></>
-            )}
+            )} */}
           </>
         ) : (
           <NoKids />
